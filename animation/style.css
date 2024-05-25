@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: animate 12s ease-in-out infinite;
+    background-image: linear-gradient(
+            rgba(208, 218, 219, 0.5),
+            rgba(35, 71, 103, 0.5)
+          ),
+          url("https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5leXxlbnwwfHwwfHx8MA%3D%3D");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+ @Keyframes animate{
+    0%{background: url(https://www.adequatetravel.com/blog/wp-content/uploads/2021/03/FI-Manipur-HS.jpg);}
+    10%{background: url(https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5leXxlbnwwfHwwfHx8MA%3D%3D);}
+    30%{background: url(https://img.veenaworld.com/wp-content/uploads/2020/07/Gaganbavda-2.jpg?imwidth=1080);}
+    
+
+}
+.wave {
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #494234;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul a::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-radius: 20px;
+    background-color: #b1d7eb;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+nav ul a:hover:after {
+    width: 100%;
+}
+
+.main-content {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-Tour,
+.main-text {
+    flex-basis: 50%;
+}
+
+.image-Tour img {
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #24cd5a;
+}
+
+.main-content p {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.main-content button {
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color: #971636;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.swiper {
+    width: 20rem;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.right .box .image img {
+    width: 70%;
+}
+
+.image {
+    margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(220, 250, 29, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.image:hover {
+    background-color: rgba(136, 28, 40, 0.7);
+}
+
+.box .inner-box {
+    margin: 1.5rem 0 0 1rem;
+    color:#b50d0d;
+}
+
+.box .inner-box p {
+    font-size: 14px;
+    font-weight: 500;
+    color:#24cd5a;
+}
+
+.social-links {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: rgb(255, 255, 255);
+
+}
+
+.social-links::before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    top: 42%;
+    left: -150px;
+
+}
+
+.social-links i {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    color:#152ecf;
+    
+
+}
+
+.social-links i:hover {
+    transform: translateY(-5px);
+}
+
+
+.section__container {
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+    margin: auto;
+  }
+  
+  .section__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .section__subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav__logo a {
+    text-decoration: none;
+    color: var(--extra-light);
+    font-size: 1.5rem;
+  }
+  
+  .nav__links {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .link {
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .link:hover {
+    color: var(--primary-color);
+  }
+  
+  header {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(45, 92, 132, 0.5),
+        rgba(45, 92, 132, 0.5)
+      ),
+      url("https://th.bing.com/th/id/OIP.BTPiRmiU0ZoP96X73VeUogHaDm?rs=1&pid=ImgDetMain");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header .section__container {
+    height: 100%;
+    display: flex;
+    align-items:flex;
+    justify-content:flex;
+  }
+  
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+  }
+  
+  .header__content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+  }
+  
+  .header__content p {
+    text-align: center;
+  }
+  
+  .header__content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .header__content button:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  .journey__container {
+    background-color: var(--secondary-color);
+  }
+  
+  .journey__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .country__card {
+    background-color: rgb(23, 136, 222);
+  }
+  
+  .country__name {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+  }
+  
+  .country__name i {
+    font-size: 1.2rem;
+  }
+  
+  .country__name span {
+    font-style: italic;
+  }
+  
+  .banner__container {
+    background-image: linear-gradient(
+        rgba(53, 123, 68, 0.5),
+        rgba(35, 71, 103, 0.5)
+      ),
+      url("https://movetomore.com.au/wp-content/uploads/2022/03/nsw-thredbo-village-l.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .banner_container .section_container {
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: rgba(243, 105, 14, 0.909);
+  }
+  
+  .banner__content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .banner__content button {
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: rgb(223, 182, 182);
+    color: indianred;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .display__container {
+    background-color: violet;
+  }
+  
+  .display_container :is(.sectiontitle, .section_subtitle) {
+    color: rgb(228, 12, 174);
+  }
+  
+  .display__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .display__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;;
+    text-align: center;
+  }
+  
+  .display__card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .display__card h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+  }
+  .display__container {
+    background-image: linear-gradient(
+        rgba(208, 218, 219, 0.5),
+        rgba(35, 71, 103, 0.5)
+      ),
+      url("https://th.bing.com/th/id/R.880523ebb78190236734fe7da836ce70?rik=ExgxYd3DRYjEkg&riu=http%3a%2f%2fdata.freehdw.com%2fnatural-scenery.jpg&ehk=gNy74bz1C1ZIe0i3MEl%2bLK1JOIBQKomKOT6ybNYEex8%3d&risl=&pid=ImgRaw&r=0");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .display__card p {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    color: violet;
+  }
+  
+  .display__grid .grid-1 {
+    grid-area: 1/1/3/3;
+  }
+  
+  footer {
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+  }
+  
+  footer .section__container {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    
+  }
+  .section__container {
+    background-image: linear-gradient(
+        rgba(208, 218, 219, 0.5),
+        rgba(35, 71, 103, 0.5)
+      ),
+      url("https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5leXxlbnwwfHwwfHx8MA%3D%3D");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  footer h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(34, 233, 11);
+  }
+  
+ 
+  
+  footer p {
+    font-style: italic;
+    color: aqua;
+  }
+  
+  @media (min-width: 640px) {
+    .nav__links {
+      display: flex;
+    }
+  
+    header .section__container {
+      justify-content: flex-start;
+    }
+  
+    .header__content {
+      max-width: 400px;
+      align-items: flex-start;
+    }
+  
+    .header__content p {
+      text-align: left;
+    }
+  
+    .journey__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  
+    .display__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .display__card {
+      gap: 0;
+    }
+  
+    .display__card i {
+      font-size: 1.75rem;
+    }
+  
+    .display__card h4 {
+      font-size: 1rem;
+    }
+  
+    .display__card p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (min-width: 786px) {
+    .banner_container .section_container {
+      justify-content: flex-end;
+    }
+  
+    .banner__content {
+      align-items: flex-end;
+      text-align: right;
+      max-width: 800px;
+    }
+  
+    .display__card {
+      gap: 0.5rem;
+    }
+  
+    .display__card i {
+      font-size: 2.5rem;
+    }
+  
+    .display__card p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .display__card {
+      gap: 1rem;
+    }
+  
+    .display__card i {
+      font-size: 3rem;
+    }
+  
+    .display__card h4 {
+      font-size: 1.5rem;
+    }
+  
+    .display__card p {
+      font-size: 1rem;
+   }
+  }
+  
